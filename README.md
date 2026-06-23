@@ -10,9 +10,10 @@ Application mobile Android permettant aux parents d'élèves de suivre la scolar
 
 ## Membres du groupe
 
-| Nom | Prénom | Email |
-|-----|--------|-------|
-| KOUNIKORGO | Hamed | hamedkounikorgo60@gmail.com |
+| Nom | Prénom | Rôle | Email |
+|-----|--------|------|-------|
+| SORE | Abdoulaye | Développeur principal | |
+| KOUNIKORGO | Hamed | Développeur | hamedkounikorgo60@gmail.com |
 
 ## Fonctionnalités
 
