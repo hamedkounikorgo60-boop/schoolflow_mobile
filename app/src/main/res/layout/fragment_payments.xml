@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <!-- Payment Summary Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <!-- Total Scolarité -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/scolarite_totale"
+                            android:textSize="@dimen/text_body"
+                            android:textColor="@color/on_surface_secondary" />
+
+                        <TextView
+                            android:id="@+id/tvScolariteTotale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/on_surface" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="@dimen/spacing_sm"
+                        android:background="@color/divider" />
+
+                    <!-- Total Payé -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_paye"
+                            android:textSize="@dimen/text_body"
+                            android:textColor="@color/on_surface_secondary" />
+
+                        <TextView
+                            android:id="@+id/tvTotalPaye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/success" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="@dimen/spacing_sm"
+                        android:background="@color/divider" />
+
+                    <!-- Reste à Payer -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/reste_a_payer"
+                            android:textSize="@dimen/text_body"
+                            android:textColor="@color/on_surface_secondary" />
+
+                        <TextView
+                            android:id="@+id/tvResteAPayer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/error" />
+
+                    </LinearLayout>
+
+                    <!-- Progress Bar -->
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progressPaiement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        app:trackCornerRadius="4dp"
+                        app:trackThickness="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvPourcentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:textSize="@dimen/text_caption"
+                        android:textColor="@color/on_surface_secondary" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Payment History -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:layout_marginBottom="@dimen/spacing_sm"
+                android:text="@string/historique_paiements"
+                android:textSize="@dimen/text_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/on_surface" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPaiements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:text="@string/aucun_paiement"
+                android:textColor="@color/on_surface_secondary"
+                android:visibility="gone" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

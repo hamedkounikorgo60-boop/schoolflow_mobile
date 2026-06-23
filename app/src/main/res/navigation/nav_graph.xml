@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.schoolflow.mobile.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard" />
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.schoolflow.mobile.ui.notes.NotesFragment"
+        android:label="@string/nav_notes" />
+
+    <fragment
+        android:id="@+id/paymentsFragment"
+        android:name="com.schoolflow.mobile.ui.payments.PaymentsFragment"
+        android:label="@string/nav_payments" />
+
+    <fragment
+        android:id="@+id/absencesFragment"
+        android:name="com.schoolflow.mobile.ui.absences.AbsencesFragment"
+        android:label="@string/nav_absences" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.schoolflow.mobile.ui.notifications.NotificationsFragment"
+        android:label="@string/nav_notifications" />
+
+</navigation>
