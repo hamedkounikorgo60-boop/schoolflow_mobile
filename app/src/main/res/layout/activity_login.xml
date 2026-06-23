@@ -125,6 +125,17 @@
                     android:text="@string/login_button"
                     android:textSize="16sp" />
 
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnForgotPassword"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/primary"
+                    android:textSize="14sp" />
+
                 <com.google.android.material.progressindicator.CircularProgressIndicator
                     android:id="@+id/progressBar"
                     android:layout_width="wrap_content"

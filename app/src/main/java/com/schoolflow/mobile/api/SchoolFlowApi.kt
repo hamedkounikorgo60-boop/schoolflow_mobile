@@ -13,6 +13,9 @@ interface SchoolFlowApi {
     @POST("logout")
     suspend fun logout(): Response<ApiResponse<Unit>>
 
+    @POST("forgot-password")
+    suspend fun forgotPassword(@Body request: ForgotPasswordRequest): Response<ApiResponse<Unit>>
+
     @POST("change-password")
     suspend fun changePassword(@Body request: ChangePasswordRequest): Response<ApiResponse<Unit>>
 

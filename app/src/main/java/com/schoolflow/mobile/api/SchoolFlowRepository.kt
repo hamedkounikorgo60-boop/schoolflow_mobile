@@ -14,7 +14,8 @@ class SchoolFlowRepository {
             if (response.isSuccessful) {
                 val body = response.body()
                 if (body != null && body.success) {
-                    Resource.Success(body.data!!)
+                    @Suppress("UNCHECKED_CAST")
+                    Resource.Success(body.data ?: Unit as T)
                 } else {
                     Resource.Error(body?.message ?: "Erreur inconnue")
                 }
@@ -43,6 +44,10 @@ class SchoolFlowRepository {
 
     suspend fun logout(): Resource<Unit> {
         return safeApiCall { api.logout() }
+    }
+
+    suspend fun forgotPassword(email: String): Resource<Unit> {
+        return safeApiCall { api.forgotPassword(ForgotPasswordRequest(email)) }
     }
 
     suspend fun changePassword(

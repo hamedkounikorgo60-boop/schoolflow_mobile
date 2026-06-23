@@ -19,6 +19,9 @@ class AuthViewModel : ViewModel() {
     private val _changePasswordResult = MutableLiveData<Resource<Unit>>()
     val changePasswordResult: LiveData<Resource<Unit>> = _changePasswordResult
 
+    private val _forgotPasswordResult = MutableLiveData<Resource<Unit>>()
+    val forgotPasswordResult: LiveData<Resource<Unit>> = _forgotPasswordResult
+
     private val _logoutResult = MutableLiveData<Resource<Unit>>()
     val logoutResult: LiveData<Resource<Unit>> = _logoutResult
 
@@ -35,6 +38,13 @@ class AuthViewModel : ViewModel() {
             _changePasswordResult.value = repository.changePassword(
                 currentPassword, newPassword, confirmation
             )
+        }
+    }
+
+    fun forgotPassword(email: String) {
+        _forgotPasswordResult.value = Resource.Loading()
+        viewModelScope.launch {
+            _forgotPasswordResult.value = repository.forgotPassword(email)
         }
     }
 

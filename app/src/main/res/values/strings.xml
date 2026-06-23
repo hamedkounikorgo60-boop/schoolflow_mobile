@@ -10,6 +10,12 @@
     <string name="password_hint">Mot de passe</string>
     <string name="login_button">Se connecter</string>
     <string name="login_error">Email ou mot de passe incorrect</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="forgot_password_title">Mot de passe oublié</string>
+    <string name="forgot_password_subtitle">Entrez votre adresse email pour recevoir un lien de réinitialisation</string>
+    <string name="forgot_password_button">Envoyer le lien</string>
+    <string name="forgot_password_success">Un email de réinitialisation a été envoyé à votre adresse</string>
+    <string name="back_to_login">Retour à la connexion</string>
     <string name="field_required">Ce champ est obligatoire</string>
     <string name="invalid_email">Adresse email invalide</string>
 
