@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SchoolFlow</string>
+    <string name="app_subtitle">Suivi Scolaire Parent-Enfant</string>
+
+    <!-- Login -->
+    <string name="login_title">Connexion</string>
+    <string name="login_subtitle">Connectez-vous pour suivre la scolarité de votre enfant</string>
+    <string name="email_hint">Adresse email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_button">Se connecter</string>
+    <string name="login_error">Email ou mot de passe incorrect</string>
+    <string name="field_required">Ce champ est obligatoire</string>
+    <string name="invalid_email">Adresse email invalide</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_payments">Paiements</string>
+    <string name="nav_absences">Absences</string>
+    <string name="nav_notifications">Notifications</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Tableau de bord</string>
+    <string name="moyenne_generale">Moyenne Générale</string>
+    <string name="rang_classe">Rang dans la classe</string>
+    <string name="rang_format">%1$dème / %2$d</string>
+    <string name="rang_premier_format">1er / %1$d</string>
+    <string name="dernieres_notes">Dernières Notes</string>
+    <string name="info_eleve">Informations de l\'élève</string>
+    <string name="classe_label">Classe</string>
+    <string name="matricule_label">Matricule</string>
+    <string name="select_child">Sélectionner un enfant</string>
+
+    <!-- Notes -->
+    <string name="notes_title">Notes</string>
+    <string name="matieres_title">Matières</string>
+    <string name="notes_par_matiere">Notes - %1$s</string>
+    <string name="coefficient">Coeff. %1$d</string>
+    <string name="moyenne_matiere">Moyenne : %1$s/20</string>
+    <string name="moyennes_trimestrielles">Moyennes Trimestrielles</string>
+    <string name="aucune_note">Aucune note disponible</string>
+
+    <!-- Payments -->
+    <string name="paiements_title">Suivi des Paiements</string>
+    <string name="scolarite_totale">Scolarité totale</string>
+    <string name="total_paye">Total payé</string>
+    <string name="reste_a_payer">Reste à payer</string>
+    <string name="historique_paiements">Historique des versements</string>
+    <string name="voir_recu">Voir le reçu</string>
+    <string name="telecharger_recu">Télécharger le reçu</string>
+    <string name="aucun_paiement">Aucun paiement enregistré</string>
+    <string name="paiement_complet">Scolarité entièrement réglée</string>
+
+    <!-- Absences -->
+    <string name="absences_title">Suivi des Absences</string>
+    <string name="absence_justifiee">Justifiée</string>
+    <string name="absence_non_justifiee">Non justifiée</string>
+    <string name="motif_label">Motif : %1$s</string>
+    <string name="motif_non_renseigne">Motif non renseigné</string>
+    <string name="heures_format">%1$d heure(s)</string>
+    <string name="aucune_absence">Aucune absence enregistrée</string>
+    <string name="total_absences">Total : %1$d absence(s)</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="aucune_notification">Aucune notification</string>
+
+    <!-- Change Password -->
+    <string name="change_password_title">Modifier le mot de passe</string>
+    <string name="current_password_hint">Mot de passe actuel</string>
+    <string name="new_password_hint">Nouveau mot de passe</string>
+    <string name="confirm_password_hint">Confirmer le nouveau mot de passe</string>
+    <string name="change_password_button">Modifier</string>
+    <string name="password_changed_success">Mot de passe modifié avec succès</string>
+    <string name="password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="password_too_short">Le mot de passe doit contenir au moins 8 caractères</string>
+
+    <!-- General -->
+    <string name="loading">Chargement…</string>
+    <string name="error_occurred">Une erreur est survenue</string>
+    <string name="retry">Réessayer</string>
+    <string name="logout">Déconnexion</string>
+    <string name="logout_confirm">Voulez-vous vraiment vous déconnecter ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">OK</string>
+    <string name="sur_20">/20</string>
+    <string name="no_data">Aucune donnée disponible</string>
+    <string name="change_password">Modifier le mot de passe</string>
+    <string name="profile">Profil</string>
+</resources>
