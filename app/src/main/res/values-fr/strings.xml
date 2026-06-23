@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Already French by default, this file ensures French locale is properly supported -->
+    <string name="app_name">SchoolFlow</string>
+</resources>
