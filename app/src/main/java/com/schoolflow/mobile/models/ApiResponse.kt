@@ -26,6 +26,10 @@ data class User(
     val role: String? = null
 )
 
+data class ForgotPasswordRequest(
+    val email: String
+)
+
 data class ChangePasswordRequest(
     @SerializedName("current_password") val currentPassword: String,
     @SerializedName("new_password") val newPassword: String,

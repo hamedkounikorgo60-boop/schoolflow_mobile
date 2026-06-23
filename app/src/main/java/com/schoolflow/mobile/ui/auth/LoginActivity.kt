@@ -41,6 +41,10 @@ class LoginActivity : AppCompatActivity() {
                 viewModel.login(email, password)
             }
         }
+
+        binding.btnForgotPassword.setOnClickListener {
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
+        }
     }
 
     private fun validateInput(email: String, password: String): Boolean {

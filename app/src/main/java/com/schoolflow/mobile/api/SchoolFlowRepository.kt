@@ -45,6 +45,10 @@ class SchoolFlowRepository {
         return safeApiCall { api.logout() }
     }
 
+    suspend fun forgotPassword(email: String): Resource<Unit> {
+        return safeApiCall { api.forgotPassword(ForgotPasswordRequest(email)) }
+    }
+
     suspend fun changePassword(
         currentPassword: String,
         newPassword: String,
